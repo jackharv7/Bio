@@ -1,0 +1,92 @@
+  
+<!DOCTYPE html>
+
+<!-- CSS Stylesheets with Relative Paths -->
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Jack Harvey</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head> 
+
+<body style="font-family: Arial, Helvetica, sans-serif; font-size: large; background: url(https://upload.wikimedia.org/wikipedia/commons/e/e0/Clouds_over_the_Atlantic_Ocean.jpg); color: aliceblue;">
+
+  <header>
+    <h1 style="color: aliceblue;">Portfolio</h1>
+  </header>
+
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <img id="bio-image" src="./Images/Jack_Harvey.png" alt="Jack Harvey">
+        <h2>Jack Harvey</h2>
+      </section>
+      <p>I am a recent college graduate excited to explore the programming world. In the past few months I have developed a plethora of scripts
+        that demonstrate my capabilities with programming languanges including Python, SQL, and JavaScript. My goals are to work within an analytical
+        team in where I can utilize my knowledge of programming and technical skills to automate tasks, develope webpages, transfer and load data to analyze,
+        and develop visualizations to be exploited by a firm. My contact information is to the right and below I will post the many projects that I have completed
+        throughout the time I have been enrolled in the Rugter Data Science Program.
+      </p>
+      
+  </section>
+
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul style="color: aliceblue;">
+        <li><strong>Email:</strong><a href="jackrharvey19@gmail.com">jackrharvey19@gmail.com</a></li>
+        <li><strong>Github:</strong><a href="https://github.com/jackharv7">jackharv7</a></li>
+        <li><strong>Portfolio:</strong><a href="#">coming soon</a></li>
+      </ul>
+    </aside>
+    <h3 id="main-bio"><u>Projects</u></h3>
+    <section id="project-info1">
+      <h4><u>Web Scraping</u></h4>
+        <a href="https://github.com/jackharv7/Mars-Weather"><img id="project-image1" src="./Images/Website.png" alt="WebPage" style="height:100%"></a>
+        <p>In Python and HTML I used Splinter to scrape data and images from various websites in regards to the current state of mars. My goal was to extract data from NASA's news website in order to 
+        extract the most up to date articles that they have posted in regards to Mars. My overall goal was to be able to reload my wepage with the most up to date information as well as links to where the user and read more information. I then used Flask to connect the Python
+        files with the HTML file in order to make edits and update files easily. In this project I also took advantage of the Tweepy Library which extracts information from Twitter quickly and efficiently as user's post updates.
+      </p>
+    </section>
+    <section id="project-info2">
+      <h4><u>Python API's to Locate Hotel's Around The World</u></h4>
+      <br>
+      <a href="https://github.com/jackharv7/Python-Api"><img id="project-image1" src="./Images/Geo-Map.png" alt="Vacation Map"></a>
+      <p>
+        In Python I was able to develope a program that randomly compiles a list of hundreds of latitudes and longitutes for the Citipy library to identify the nearest city
+        (New coordinates are identified each time the program is run). I then employed API's and the request library to search for the current weather data from each city to generate a new DataFrame.
+        Visualizations are displayed based on the DataFrame and seperated into Northern and Southern Hemisphere's for visualizations and linear regression models. The Weather DataFrame is then imported into a seperate file to develope a Heat Map based on Humidity Levels in each city. 
+        Here the user can identify what their weather preferences are and the program uses Google Api's to pinpoint the closest Hotel in the city and marks this location on the Heat Map.
+      </p>
+    </section>
+    <section id="project-info3">
+      <h4><u>The Impact of the Gloabal Financial Crisis on the Housing Market</u></h4>
+      <a href="https://github.com/jackharv7/Unemployment-vs-House-"><img id="project-image" src="./Images/unemp_house_price_rhode_island.png" alt="Unemployment Rate"></a>
+        <ul>
+          <li>Worked within a team to merge and analyze Employment Data in Python from the USDA with House Price Data from the FHFA in the United States during the Global Financial Crisis.</li>
+          <li>Defines functions and utilizes dictionaries to ensure data is easily accessible for analysis.</li>
+          <li>Bins data by size of the Civilian Labor Force and Median House Price in 2007 to explore trends in house prices and unemployment rate through the use of Matplotlib.</li>
+          <li>Generates scatter plots that display the relationship between the Median House Price and the Unemployment Rate in any given state.</li>
+          <li>The smallest plot on the scatter plot represents the year 2007 and increases for each year in the scatter plot.</li>
+        </ul>
+    </section>
+    <section id="project-info4">
+      <h4><u>SQLAlchemy to Analyze the Weather in Hawaii</u></h4>
+      <a href="https://github.com/jackharv7/Hawaii-Weather-SQLAlchemy"><img id="project-image" src="./Images/first_graph.png" alt="Predicted Temps"></a>
+      <p>
+        In this project I utilized Python and the SQLAlchemy library to import and analyze a large dataset of historical weather data from several stations throuhgout Hawaii. 
+        I applied session queries to identify the average precipitation levels and the average temperatures in Hawaii for the past year to determine the weather trends in the upcoming year. The application develops a histogram, a line graph, a bar graph with an error bar, and an area plot
+        from data queried through the use of functions that identifies the minimum, maximum, and average temperatures from past data. I then created an application in Flask and Jsonified the data I queried onto a page where user's can view weather statistics from the past year. 
+        The application also allows the user to select a specific start/end date and returns the minimum, average, and maximum temperatures observed from all the stations located in Hawaii.</p>
+
+    </section>
+
+  </main>
+  
+</body>
+
+</html>
