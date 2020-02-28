@@ -83,22 +83,6 @@ a {
 #contact-info {
     width: 30%;
 }
-#project-info1 {
-    width: 45%;
-    float: left;
-}
-#project-info2 {
-    width: 55%;
-    float: left;
-}
-#project-info3 {
-    width: 50%;
-    float: right;
-}
-#project-info4 {
-    width: 50%;
-    float: right;
-}
 #bio-image {
     width: 200px;
     height: 225px;
